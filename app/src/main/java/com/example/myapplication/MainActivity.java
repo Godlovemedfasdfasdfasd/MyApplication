@@ -6,7 +6,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
-
+import com.example.hardlibary.*;
 public class MainActivity extends AppCompatActivity {
 
     boolean ledon = false;
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     class MyButtonListener implements View.OnClickListener{
         @Override
         public void onClick(View v) {
+            HardControl d = new HardControl();
             ledon =!ledon;
             if(ledon) {
                 button.setText("ALL OFF");
@@ -83,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         button = (Button) findViewById(R.id.BUTTON);
 
