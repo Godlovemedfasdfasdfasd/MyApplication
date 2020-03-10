@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 checkBoxled2.setChecked(true);
                 checkBoxled3.setChecked(true);
                 checkBoxled4.setChecked(true);
-                for(int i= 0;i<4;i++)
+                for(int i= 0;i<2;i++)
                     HardControl.ledCtrl(i,1);
             }
             else {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 checkBoxled2.setChecked(false);
                 checkBoxled3.setChecked(false);
                 checkBoxled4.setChecked(false);
-                for(int i= 0;i<4;i++)
+                for(int i= 0;i<2;i++)
                     HardControl.ledCtrl(i,0);
             }
         }
